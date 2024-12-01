@@ -64,7 +64,8 @@ class _AddVendaPageState extends State<AddVendaPage> {
             children: [
               TextFormField(
                 controller: _tipoController,
-                decoration: const InputDecoration(labelText: 'Tipo de Produto'),
+                decoration: const InputDecoration(
+                    labelText: 'Nome da Cultura Ex: Soja'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Por favor, preencha o tipo do produto';
@@ -74,7 +75,8 @@ class _AddVendaPageState extends State<AddVendaPage> {
               ),
               TextFormField(
                 controller: _quantidadeController,
-                decoration: const InputDecoration(labelText: 'Quantidade'),
+                decoration: const InputDecoration(
+                    labelText: 'Quantidade total vendida (Kg)'),
                 keyboardType: TextInputType.number,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -88,7 +90,8 @@ class _AddVendaPageState extends State<AddVendaPage> {
               ),
               TextFormField(
                 controller: _valorController,
-                decoration: const InputDecoration(labelText: 'Valor de Venda'),
+                decoration:
+                    const InputDecoration(labelText: 'Valor de Venda total'),
                 keyboardType: TextInputType.number,
                 validator: (value) {
                   if (value == null || value.isEmpty) {

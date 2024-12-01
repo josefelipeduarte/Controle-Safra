@@ -80,7 +80,7 @@ class _AddCustoPageState extends State<AddCustoPage> {
             ),
             TextField(
               controller: _precoController,
-              decoration: const InputDecoration(labelText: 'Preço'),
+              decoration: const InputDecoration(labelText: 'Valor Total Gasto'),
               keyboardType: TextInputType.number,
             ),
             TextField(
